@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neeraj's Web Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Neeraj Amrutphale</h1>
+      <ul>
+        <li><a onclick="showSection('about')">About</a></li>
+        <li><a onclick="showSection('projects')">Projects</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+        <li><a onclick="showSection('todo')">To-Do App</a></li>
+        <li><a onclick="showSection('products')">Product Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p style="text-align: left;">Aspiring computer science graduate with a solid foundation in Programming and web development (HTML, CSS,BootStrap,PHP,JS,Node.js).</p>
+
+    <p style="text-align: left;">Looking forward to work as an engineer that can contribute in key participation, team tasks & carrier opportunities.</p>
+    
+    <h2>Education</h2>
+    
+     <div id="college">
+      <p id="c">Krishna Institute Of Technology</p>
+
+      <p id="c-area">Kanpur,Uttar Pradesh</p>
+     </div>
+   
+    <div class="education-entry">
+  
+      <p class="degree">Bachelor of Engineering in Computer Science</p>
+  
+      <p class="edu-date">2022–2026</p>
+</div>
+      <br>
+      <div id="inter">
+      <p id="i">City Model Inter College</p>
+
+      <p id="i-area">Kanpur,Uttar Pradesh</p>
+     </div>
+      <div class="intermediate-entry">
+  <p class="inter">Intermediate Education</p>
+  
+  <p class="inter-date">2022</p>
+</div>
+
+
+<br>
+ <div id="highschool">
+      <p id="hs">City Model Inter College</p>
+
+      <p id="hs-area">Kanpur,Uttar Pradesh</p>
+     </div>
+
+      <div class="highschool-entry">
+  
+        <p class="highsc">High School Education</p>
+  <p class="hs-date">2020</p>
+</div>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages:Python, JavaScript</li>
+      <li>Web Development: HTML, CSS, Bootstrap, PHP</li>
+      <li>Database Management: MySQL</li>
+      <li>Soft Skills: Teamwork, Communication, Problem-Solving</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        C Programming Certification from IIT Kanpur</li>
+        
+       <li> Java Programming Certification from KTCS INDIA
+      </li>
+      <li> Python Programming Certification from RCPL</li>
+      <li> Python(Basic) Certification from Hackerrank</li>
+      <li>
+        CSS Certification from Hackerrank
+      </li>
+      <li> DSA Certification from RCPL</li>
+      <li>
+        Web Development Certification from Internshala
+      </li>
+    </ul>
+
+
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h2>
+    <div class="project-card">
+      <h2>Banking System</h3>
+      <p style="text-align: left;">●	Developed a Python-based banking system with account management and transaction processing.</p>
+      <p style="text-align: left;">
+        ●	Implemented database integration and security measures for safe financial operations.
+      </p><br>
+
+      <a href="https://github.com/Neeraj292004/Banking-System">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <h2>Simple Web Page</h3>
+      <p style="text-align: left;">● Created a simple web page using html.</p>
+      <p style="text-align: left;">
+            ●	Styled the web page using css.
+      </p>
+      <p style="text-align: left;">
+            ●	Implemented basic interactivity using JavaScript.
+      </p><br>
+      <a href="https://github.com/Neeraj292004/Simple-Web-Page">View on Github</a>
+    </div>
+    <div class ="project-card">
+      <h2>Responsive UI Development Roadmap</h3>
+      <p style="text-align: left;">● Experienced in JavaScript for DOM manipulation and client-side validation
+.</p>
+<p style="text-align: left;">● Familiar with form validation techniques using JavaScript.
+</p>
+<p style="text-align: left;">● Capable of building dynamic web components like to-do lists 
+.</p><br>
+<a href="https://github.com/Neeraj292004/Intermediate-Webpage">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p style="text-align: left;">
+      GoTo<a href="https://github.com/Neeraj292004" target="_blank">
+        GitHub
+      </a>
+    </p>
+     <p style="text-align:right;">
+      GoTo<a href="https://www.linkedin.com/in/neeraj-amrutphale-a0b0122b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app target="_blank">
+        LinkedIn
+      </a>
+    </p>
+  </section>
+
+  <section id="todo">
+    <h2>📝 My To-Do List</h2>
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Enter a task..." required />
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+  </section>
+
+  <section id="products">
+    <h2>🛍️ Products</h2>
+    <div class="controls">
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+      </select>
+
+      <select id="sort-options">
+        <option value="default">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+        <option value="name-asc">Name: A-Z</option>
+      </select>
+    </div>
+    <div id="product-list" class="product-list"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Neeraj Amrutphale</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
